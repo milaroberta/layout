@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}   
+body{
+    display: flex;
+}
+aside{
+    width: max(20% , 300px);
+    height: auto;
+
+    padding: 10px;
+    background: rgb(168,168,168);
+background: linear-gradient(0deg, rgba(168,168,168,1) 0%, rgba(50,50,50,1) 57%);
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+.img img{
+    width: 50px;
+}
+aside h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+aside > ul{
+    margin-top: 20px;
+    list-style: none;
+    
+}
+aside li {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: solid 1px #666;
+}
+
+aside li i{
+    margin-right: 10px;
+}
+
+aside li:hover{
+    background-color: black;
+}
+
+.active , .active:hover{
+    background-color: #202020;
+
+}
+
+main{
+    width: 80%;
+    background-color: rgb(236, 235, 235);
+}
+nav{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 15px #666;
+}
+.dropdown{
+    position: relative;
+    list-style: none;
+    
+}
+.dropdown i{
+    font-size: 10px;
+}
+.dropdown a{
+    padding: 10px;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+.dropdown li:hover > ul{
+    display: inherit;
+}
+.dropdown ul{
+    top: 40px;
+    left:-45px;
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: rgba(50,50,50,1);
+    border-radius: 10px;
+    padding: 10px;
+}
+.dropdown ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.dropdown ul li{
+    margin-bottom: 10px;
+}
+.dropdown ul li:hover{
+    background-color: rgb(108, 108, 108);
+}
+.dropdown ul i{
+    margin-right: 5px;
+}
+.container h1{
+    margin: 50px 0 50px 50px;
+}
+table{
+    margin: 0 auto;
+    width: 70%;
+}
+table a{
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    border: solid 2px #666;
+    padding: 5px 35px;
+    background-color: #fff;
+}
+table th{
+    background-color: rgb(9, 0, 35);
+    color: #fff;
+    padding: 5px;
+}
+table tr{
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: rgb(203, 203, 203);
+  }
+
